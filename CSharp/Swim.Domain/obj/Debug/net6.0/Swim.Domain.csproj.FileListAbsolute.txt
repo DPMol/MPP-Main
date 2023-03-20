@@ -1,0 +1,12 @@
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\bin\Debug\net6.0\Swim.Domain.deps.json
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\bin\Debug\net6.0\Swim.Domain.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\bin\Debug\net6.0\Swim.Domain.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.csproj.AssemblyReference.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.AssemblyInfoInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.AssemblyInfo.cs
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\refint\Swim.Domain.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\Swim.Domain.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Domain\obj\Debug\net6.0\ref\Swim.Domain.dll
