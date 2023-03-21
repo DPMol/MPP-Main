@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swim.Domain", "Swim.Domain\Swim.Domain.csproj", "{4D6DF4D5-EE89-440D-8CAC-8B352AE3A5F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swim.Domain", "Swim.Domain\Swim.Domain.csproj", "{4D6DF4D5-EE89-440D-8CAC-8B352AE3A5F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swim.Data", "Swim.Data\Swim.Data.csproj", "{2FC97C54-B112-4EE4-9582-92621F925F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swim.Data", "Swim.Data\Swim.Data.csproj", "{2FC97C54-B112-4EE4-9582-92621F925F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swim.ConsoleApp", "Swim.ConsoleApp\Swim.ConsoleApp.csproj", "{BD532E13-3772-433D-9837-4DACDE462656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2FC97C54-B112-4EE4-9582-92621F925F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC97C54-B112-4EE4-9582-92621F925F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC97C54-B112-4EE4-9582-92621F925F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD532E13-3772-433D-9837-4DACDE462656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD532E13-3772-433D-9837-4DACDE462656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD532E13-3772-433D-9837-4DACDE462656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD532E13-3772-433D-9837-4DACDE462656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

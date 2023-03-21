@@ -13,3 +13,18 @@ C:\Projects\University\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.dll
 C:\Projects\University\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\refint\Swim.Data.dll
 C:\Projects\University\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.pdb
 C:\Projects\University\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\ref\Swim.Data.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\bin\Debug\net6.0\Swim.Data.deps.json
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\bin\Debug\net6.0\Swim.Data.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\bin\Debug\net6.0\Swim.Data.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\bin\Debug\net6.0\Swim.Domain.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\bin\Debug\net6.0\Swim.Domain.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.csproj.AssemblyReference.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.AssemblyInfoInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.AssemblyInfo.cs
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.csproj.CoreCompileInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.csproj.CopyComplete
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\refint\Swim.Data.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\Swim.Data.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Data\obj\Debug\net6.0\ref\Swim.Data.dll

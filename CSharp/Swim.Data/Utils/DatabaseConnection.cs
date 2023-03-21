@@ -9,7 +9,10 @@ namespace Swim.Data.Utils
 
         private SqlConnection? connection;
 
-        DatabaseConnection() { }
+        DatabaseConnection()
+        {
+            this.Open();
+        }
         private static readonly object _lock = new();
         private static DatabaseConnection? instance = null;
         public static DatabaseConnection Instance
@@ -28,10 +31,9 @@ namespace Swim.Data.Utils
             }
         }
 
-        private void Open()
+        public void Open()
         {
-            if (connection == null)
-                return;
+
             try
             {
                 connection = new SqlConnection(connectionString);
