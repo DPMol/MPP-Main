@@ -4,7 +4,7 @@ namespace Swim.Data.Utils
 {
     public class DatabaseConnection
     {
-        private readonly string connectionString = @"Server=LAPTOP-16N38ULV\SQLEXPRESS;Database=MPP
+        private readonly string connectionString = @"Server=DESKTOP-V45K2GG\SQLEXPRESS;Database=MPP
             ;Integrated Security=true;TrustServerCertificate=true";
 
         private SqlConnection? connection;

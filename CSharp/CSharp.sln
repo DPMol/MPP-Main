@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swim.Domain", "Swim.Domain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swim.Data", "Swim.Data\Swim.Data.csproj", "{2FC97C54-B112-4EE4-9582-92621F925F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swim.ConsoleApp", "Swim.ConsoleApp\Swim.ConsoleApp.csproj", "{BD532E13-3772-433D-9837-4DACDE462656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swim.ConsoleApp", "Swim.ConsoleApp\Swim.ConsoleApp.csproj", "{BD532E13-3772-433D-9837-4DACDE462656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

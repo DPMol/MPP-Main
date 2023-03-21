@@ -11,4 +11,4 @@ repo.Save(new User()
     Password = "radu"
 });
 var users = repo.FindAll();
-Console.WriteLine();
+System.Diagnostics.Debug.WriteLine("CIAO");

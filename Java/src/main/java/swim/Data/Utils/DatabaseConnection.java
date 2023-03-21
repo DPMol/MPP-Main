@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class DatabaseConnection
 {
     private static Connection Instance;
-    private static final String connectionString = "jdbc:sqlserver://LAPTOP-16N38ULV;database=MPP;encrypt=true;trustServerCertificate=true;";
+    private static final String connectionString = "jdbc:sqlserver://localhost;database=MPP;encrypt=true;trustServerCertificate=true;";
     private static final String username = "admin";
     private static final String password = "admin";
     private Connection connection;
