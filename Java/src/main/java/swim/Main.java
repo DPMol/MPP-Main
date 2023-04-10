@@ -1,16 +1,10 @@
 package swim;
 
-import swim.Data.Repositories.UserRepositories.UserRepository;
-import swim.Domain.Models.User;
+import Repositories.UserRepositories.UserDatabaseRepository;
+import Repositories.UserRepositories.UserRepository;
 
 public class Main {
     public static void main(String[] args) {
-        var repo = new UserRepository();
-
-        repo.save(new User(12, "danial", "daniel"));
-
-        var users = repo.findAll();
-
-        System.out.println(users);
+        UserRepository userRepository = new UserDatabaseRepository();
     }
 }

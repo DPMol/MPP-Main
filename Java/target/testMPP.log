@@ -1,3 +1,3 @@
-21 Mar 2023 16:41:19,360 ERROR swim.Data.Repositories.DatabaseRepository 14 <init> - SA TERMINAT MOSULE
-21 Mar 2023 16:42:04,066 ERROR swim.Data.Repositories.DatabaseRepository 14 <init> - SA TERMINAT MOSULE
-21 Mar 2023 16:42:20,553 ERROR swim.Data.Repositories.DatabaseRepository 13 <init> - SA TERMINAT MOSULE
+21 Mar 2023 16:41:19,360 ERROR swim.Data.Repositories.DatabaseCrudRepository 14 <init> - SA TERMINAT MOSULE
+21 Mar 2023 16:42:04,066 ERROR swim.Data.Repositories.DatabaseCrudRepository 14 <init> - SA TERMINAT MOSULE
+21 Mar 2023 16:42:20,553 ERROR swim.Data.Repositories.DatabaseCrudRepository 13 <init> - SA TERMINAT MOSULE

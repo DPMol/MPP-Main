@@ -32,21 +32,24 @@ create table Users(
 )
 
 go
+create table Participants(
+	id int primary key identity,
+	name varchar(50),
+	age int
+)
+
+go
 
 create table Trials(
 	id int primary key identity,
-	name varchar(50),
 	distance int,
 	style varchar(50),
-	startTime datetime,
-
-	check(distance > 0)
 )
 
 go
 
 create table Registrations(
 	id int primary key identity,
-	userId int foreign key references Users(id),
+	participantId int foreign key references Participants(id),
 	trialId int foreign key references Trials(id)
 )
