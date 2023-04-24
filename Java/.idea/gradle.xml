@@ -4,48 +4,17 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
-        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="corretto-17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Client" />
+            <option value="$PROJECT_DIR$/ClientFx" />
             <option value="$PROJECT_DIR$/Data" />
             <option value="$PROJECT_DIR$/Domain" />
             <option value="$PROJECT_DIR$/Networking" />
             <option value="$PROJECT_DIR$/Server" />
             <option value="$PROJECT_DIR$/Services" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Client" />
-        <option name="gradleJvm" value="corretto-17" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Client" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientFX" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/ClientFX" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/RpcClientFx" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/RpcClientFx" />
           </set>
         </option>
       </GradleProjectSettings>

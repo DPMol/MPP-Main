@@ -3,6 +3,8 @@ package Repositories.RegistrationRepositories;
 import Models.Registration;
 import Repositories.DatabaseRepository;
 
+import java.util.List;
+
 public class RegistrationDatabaseRepository extends DatabaseRepository implements RegistrationRepository {
     @Override
     public Registration findOne(Integer integer) {
@@ -10,7 +12,7 @@ public class RegistrationDatabaseRepository extends DatabaseRepository implement
     }
 
     @Override
-    public Iterable<Registration> findAll() {
+    public List<Registration> findAll() {
         return null;
     }
 

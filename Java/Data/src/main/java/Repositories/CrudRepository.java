@@ -2,6 +2,8 @@ package Repositories;
 
 import Utils.Entity;
 
+import java.util.List;
+
 /**
  * CRUD operations repository interface
  * @param <ID> - type E must have an attribute of type ID
@@ -25,7 +27,7 @@ public interface CrudRepository<ID, E extends Entity<ID>> {
      *
      * @return all entities
      */
-    Iterable<E> findAll();
+    List<E> findAll();
 
     /**
      *

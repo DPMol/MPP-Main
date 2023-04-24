@@ -2,10 +2,11 @@ package rpcprotocol;
 
 import Models.User;
 import dto.DTOUtils;
+import dto.ParticipantDTO;
 import dto.UserDTO;
-import swim.ChatException;
-import swim.IChatObserver;
-import swim.IChatServices;
+import services.SwimException;
+import services.IChatObserver;
+import services.IChatServices;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -70,9 +71,10 @@ public class ChatClientRpcWorker implements Runnable, IChatObserver {
             UserDTO udto=(UserDTO)request.data();
             User user= DTOUtils.getFromDTO(udto);
             try {
-                server.login(user, this);
-                return okResponse;
-            } catch (ChatException e) {
+                var userR = server.login(user, this);
+                var userDTO = DTOUtils.getDTO(userR);
+                return new Response.Builder().type(ResponseType.LOGIN).data(userDTO).build();
+            } catch (SwimException e) {
                 connected=false;
                 return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
             }
@@ -87,7 +89,42 @@ public class ChatClientRpcWorker implements Runnable, IChatObserver {
                 connected=false;
                 return okResponse;
 
-            } catch (ChatException e) {
+            } catch (SwimException e) {
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+        if (request.type()== RequestType.GET_TRIALS){
+            System.out.println("GetTrials request ..."+request.type());
+            try {
+                var trials = server.getTrials();
+                var trialDTOS = DTOUtils.getDTO(trials);
+                return new Response.Builder().type(ResponseType.GET_TRIALS).data(trialDTOS).build();
+            } catch (SwimException e) {
+                connected=false;
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+        if (request.type()== RequestType.GET_PARTICIPANTS){
+            System.out.println("GetParticipants request ..."+request.type());
+            Integer trialId=(Integer)request.data();
+            try {
+                var participants = server.getParticipants(trialId);
+                var participantDTOS = DTOUtils.getDTO(participants);
+                return new Response.Builder().type(ResponseType.GET_PARTICIPANTS).data(participantDTOS).build();
+            } catch (SwimException e) {
+                connected=false;
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+        if(request.type() == RequestType.ADD_PARTICIPANT){
+            System.out.println("AddParticipants request ..."+request.type());
+            var participantDTO = (ParticipantDTO)request.data();
+            var participant = DTOUtils.getFromDTO(participantDTO);
+            try {
+                server.addParticipant(participant);
+                return new Response.Builder().type(ResponseType.OK).build();
+            } catch (SwimException e) {
+                connected=false;
                 return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
             }
         }

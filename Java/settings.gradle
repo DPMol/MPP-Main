@@ -1,9 +1,8 @@
 rootProject.name = 'Java'
+include 'Services'
 include 'Domain'
 include 'Data'
 include 'Server'
 include 'Networking'
-include 'Services'
-include 'Client'
-include 'Client'
+include 'ClientFx'
 

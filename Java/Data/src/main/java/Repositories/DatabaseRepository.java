@@ -1,6 +1,6 @@
 package Repositories;
 
-import Utils.DatabaseConnection;
+import DataUtils.DatabaseConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -3,20 +3,20 @@ package Models;
 import Utils.Entity;
 
 public class Trial extends Entity<Integer> {
-    String distance;
+    Integer distance;
     String style;
 
-    public Trial(Integer id, String distance, String style) {
+    public Trial(Integer id, Integer distance, String style) {
         setId(id);
         this.distance = distance;
         this.style = style;
     }
 
-    public String getDistance() {
+    public Integer getDistance() {
         return distance;
     }
 
-    public void setDistance(String distance) {
+    public void setDistance(Integer distance) {
         this.distance = distance;
     }
 

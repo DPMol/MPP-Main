@@ -1,8 +1,13 @@
-module com.example.clientfx {
+module Java.ClientFx.main {
     requires javafx.controls;
+    requires javafx.graphics;
     requires javafx.fxml;
+    requires Java.Services.main;
+    requires Java.Networking.main;
+    requires Java.Domain.main;
+    requires org.apache.logging.log4j;
 
-
-    opens com.example.clientfx to javafx.fxml;
-    exports com.example.clientfx;
+    opens client;
+    opens client.gui;
+    exports client;
 }

@@ -1,4 +1,0 @@
-21 Mar 2023 16:43:16,954 INFO  swim.Data.Repositories.UserRepositories.UserCrudRepository 107 save - Saving User: 12
-21 Mar 2023 16:43:17,007 INFO  swim.Data.Repositories.UserRepositories.UserCrudRepository 119 save - Save Successful
-21 Mar 2023 16:43:17,007 INFO  swim.Data.Repositories.UserRepositories.UserCrudRepository 40 findAll - Searching all users
-21 Mar 2023 16:43:17,017 INFO  swim.Data.Repositories.UserRepositories.UserCrudRepository 60 findAll - Search Finished With 7 results

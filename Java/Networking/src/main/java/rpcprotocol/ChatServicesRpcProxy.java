@@ -1,16 +1,21 @@
 package rpcprotocol;
 
+import Models.Participant;
+import Models.Trial;
 import Models.User;
 import dto.DTOUtils;
+import dto.ParticipantDTO;
+import dto.TrialDTO;
 import dto.UserDTO;
-import swim.ChatException;
-import swim.IChatObserver;
-import swim.IChatServices;
+import services.SwimException;
+import services.IChatObserver;
+import services.IChatServices;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -33,24 +38,65 @@ public class ChatServicesRpcProxy implements IChatServices {
         qresponses=new LinkedBlockingQueue<Response>();
     }
 
-    public void login(User user, IChatObserver client) throws ChatException {
+    public Participant[] getParticipants(Integer trialId) throws SwimException {
+        Request req=new Request.Builder().type(RequestType.GET_PARTICIPANTS).data(trialId).build();
+        sendRequest(req);
+        Response response=readResponse();
+        if (response.type()== ResponseType.ERROR){
+            String err=response.data().toString();
+            throw new SwimException(err);
+        }
+        ParticipantDTO[] participantDTOS=(ParticipantDTO[])response.data();
+        Participant[] participants= DTOUtils.getFromDTO(participantDTOS);
+        return participants;
+    }
+
+    @Override
+    public void addParticipant(Participant participant) throws SwimException {
+        var participantDTO = DTOUtils.getDTO(participant);
+        Request req=new Request.Builder().type(RequestType.ADD_PARTICIPANT).data(participantDTO).build();
+        sendRequest(req);
+        Response response=readResponse();
+        if (response.type() == ResponseType.ERROR){
+            String err=response.data().toString();
+            throw new SwimException(err);
+        }
+    }
+
+    public Trial[] getTrials() throws SwimException {
+        Request req=new Request.Builder().type(RequestType.GET_TRIALS).build();
+        sendRequest(req);
+        Response response=readResponse();
+        if (response.type()== ResponseType.ERROR){
+            String err=response.data().toString();
+            throw new SwimException(err);
+        }
+        TrialDTO[] trialDTOS=(TrialDTO[])response.data();
+        Trial[] trials= DTOUtils.getFromDTO(trialDTOS);
+        return trials;
+    }
+
+    public User login(User user, IChatObserver client) throws SwimException {
         initializeConnection();
         UserDTO udto= DTOUtils.getDTO(user);
         Request req=new Request.Builder().type(RequestType.LOGIN).data(udto).build();
         sendRequest(req);
         Response response=readResponse();
-        if (response.type()== ResponseType.OK){
+        if (response.type()== ResponseType.LOGIN){
             this.client=client;
-            return;
+            UserDTO userDTO = (UserDTO) response.data();
+            User userR = DTOUtils.getFromDTO(userDTO);
+            return userR;
         }
         if (response.type()== ResponseType.ERROR){
             String err=response.data().toString();
             closeConnection();
-            throw new ChatException(err);
+            throw new SwimException(err);
         }
+        return null;
     }
 
-    public void logout(User user, IChatObserver client) throws ChatException {
+    public void logout(User user, IChatObserver client) throws SwimException {
         UserDTO udto= DTOUtils.getDTO(user);
         Request req=new Request.Builder().type(RequestType.LOGOUT).data(udto).build();
         sendRequest(req);
@@ -58,7 +104,7 @@ public class ChatServicesRpcProxy implements IChatServices {
         closeConnection();
         if (response.type()== ResponseType.ERROR){
             String err=response.data().toString();
-            throw new ChatException(err);
+            throw new SwimException(err);
         }
     }
 
@@ -75,17 +121,17 @@ public class ChatServicesRpcProxy implements IChatServices {
 
     }
 
-    private void sendRequest(Request request)throws ChatException {
+    private void sendRequest(Request request)throws SwimException {
         try {
             output.writeObject(request);
             output.flush();
         } catch (IOException e) {
-            throw new ChatException("Error sending object "+e);
+            throw new SwimException("Error sending object "+e);
         }
 
     }
 
-    private Response readResponse() throws ChatException {
+    private Response readResponse() throws SwimException {
         Response response=null;
         try{
 
@@ -96,7 +142,7 @@ public class ChatServicesRpcProxy implements IChatServices {
         }
         return response;
     }
-    private void initializeConnection() throws ChatException {
+    private void initializeConnection() throws SwimException {
         try {
             connection=new Socket(host,port);
             output=new ObjectOutputStream(connection.getOutputStream());
