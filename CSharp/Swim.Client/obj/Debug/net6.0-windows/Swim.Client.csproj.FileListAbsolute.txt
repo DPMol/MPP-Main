@@ -24,3 +24,29 @@ D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Client\obj\Debug\
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.pdb
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.genruntimeconfig.cache
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\ref\Swim.Client.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Client.exe
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Client.deps.json
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Client.runtimeconfig.json
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Client.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Client.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\log4net.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Domain.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Networking.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Services.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Domain.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Networking.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\bin\Debug\net6.0-windows\Swim.Services.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.csproj.AssemblyReference.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\chat.client.LoginWindow.resources
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\SwimmingClient.MainForm.resources
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.csproj.GenerateResource.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.AssemblyInfoInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.AssemblyInfo.cs
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.csproj.CoreCompileInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.csproj.CopyComplete
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\refint\Swim.Client.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\Swim.Client.genruntimeconfig.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Client\obj\Debug\net6.0-windows\ref\Swim.Client.dll

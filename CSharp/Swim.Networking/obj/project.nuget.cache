@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cHoZHt5XtQ78Yd5Tx5n8eyw2koqs2D2LUoh4QtzLFWPYzODGXrDDj6LNuebnICTQbv9ElArwZgKY8XrCHMLypw==",
+  "dgSpecHash": "gYOnGWIjGLBrKhN/GRT3Bfd4f8CJVz3YqgHvjUk4F1vMHpH/h57SMkG46kBTboiMXmqRDE5T/o9CYv69vN53sg==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj",
+  "projectFilePath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\12den\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "C:\\Users\\12den\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",

@@ -17,7 +17,7 @@ namespace Swim.Client
 
 
             //IChatServer server=new ChatServerMock();          
-            IChatServices server = new ChatServerProxy("127.0.0.1", 55556);
+            IChatServices server = new ChatServerProxy("127.0.0.1", 55555);
             ClientController ctrl = new ClientController(server);
             LoginWindow win = new LoginWindow(ctrl);
             Application.Run(win);

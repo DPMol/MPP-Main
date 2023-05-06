@@ -1,4 +1,6 @@
-﻿using Swim.Domain.Models.UserModels;
+﻿using Swim.Domain.Models.ParticipantModels;
+using Swim.Domain.Models.TrialModels;
+using Swim.Domain.Models.UserModels;
 
 namespace Swim.Networking
 {
@@ -6,6 +8,23 @@ namespace Swim.Networking
     {
     }
 
+    [Serializable]
+    public class AddParticipantRequest : Request
+    {
+        public ParticipantDTO participantDTO { get; set; }
+    }
+
+    [Serializable]
+    public class GetParticipantsRequest : Request
+    {
+        public TrialDTO TrialDTO { get; set; }
+    }
+
+    [Serializable]
+    public class GetTrialsRequest : Request
+    {
+
+    }
 
     [Serializable]
     public class LoginRequest : Request

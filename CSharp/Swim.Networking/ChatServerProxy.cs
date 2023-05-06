@@ -3,6 +3,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using Swim.Services;
 using Swim.Domain.Models.UserModels;
+using Swim.Domain.Models.TrialModels;
+using Swim.Domain.Models.ParticipantModels;
 
 namespace Swim.Networking
 {
@@ -28,10 +30,68 @@ namespace Swim.Networking
             responses = new Queue<Response>();
         }
 
-        public virtual void login(User user, IChatObserver client)
+
+        public void AddParticipant(Participant participant)
+        {
+            var participantDTO = DTOUtils.GetDTO(participant);
+            sendRequest(new AddParticipantRequest { participantDTO = participantDTO });
+            var response = readResponse();
+            if(response is OkResponse)
+            {
+                return;
+            }
+            if (response is ErrorResponse)
+            {
+                ErrorResponse err = (ErrorResponse)response;
+                closeConnection();
+                throw new ChatException(err.Message);
+            }
+            throw new ChatException();
+        }
+
+        public Participant[] GetParticipants(Trial trial)
+        {
+            var trialDTO = DTOUtils.GetDTO(trial);
+            sendRequest(new GetParticipantsRequest { TrialDTO = trialDTO});
+            Response response = readResponse();
+            if (response is GetParticipantsResponse resp)
+            {
+                var participantDTOs = resp.participantDTOs;
+                var participants = DTOUtils.GetFromDTO(participantDTOs);
+                return participants;
+            }
+            if (response is ErrorResponse)
+            {
+                ErrorResponse err = (ErrorResponse)response;
+                closeConnection();
+                throw new ChatException(err.Message);
+            }
+            throw new ChatException();
+        }
+
+        public virtual Trial[] GetTrials()
+        {
+            sendRequest(new GetTrialsRequest());
+            Response response = readResponse();
+            if (response is GetTrialsResponse resp)
+            {
+                var trialDTOs = resp.trialDTOs;
+                var trials = DTOUtils.GetFromDTO(trialDTOs);
+                return trials;
+            }
+            if (response is ErrorResponse)
+            {
+                ErrorResponse err = (ErrorResponse)response;
+                closeConnection();
+                throw new ChatException(err.Message);
+            }
+            throw new ChatException();
+        }
+
+        public virtual void Login(User user, IChatObserver client)
         {
             initializeConnection();
-            UserDTO udto = DTOUtils.getDTO(user);
+            UserDTO udto = DTOUtils.GetDTO(user);
             sendRequest(new LoginRequest(udto));
             Response response = readResponse();
             if (response is OkResponse)
@@ -47,9 +107,9 @@ namespace Swim.Networking
             }
         }
 
-        public virtual void logout(User user, IChatObserver client)
+        public virtual void Logout(User user, IChatObserver client)
         {
-            UserDTO udto = DTOUtils.getDTO(user);
+            UserDTO udto = DTOUtils.GetDTO(user);
             sendRequest(new LogoutRequest(udto));
             Response response = readResponse();
             closeConnection();
@@ -172,6 +232,6 @@ namespace Swim.Networking
 
             }
         }
-        //}
+
     }
 }

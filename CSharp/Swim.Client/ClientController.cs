@@ -1,4 +1,6 @@
-﻿using Swim.Domain.Models.UserModels;
+﻿using Swim.Domain.Models.ParticipantModels;
+using Swim.Domain.Models.TrialModels;
+using Swim.Domain.Models.UserModels;
 using Swim.Services;
 
 namespace Swim.Client
@@ -13,6 +15,24 @@ namespace Swim.Client
             this.server = server;
             currentUser = null;
         }
+        public void AddParticipant(Participant participant)
+        {
+            server.AddParticipant(participant);
+        }
+
+        public List<Participant> GetParticipants(Trial trial)
+        {
+            var participants = server.GetParticipants(trial);
+
+            return participants.ToList();
+        }
+
+        public List<Trial> GetTrials()
+        {
+            var trials = server.GetTrials();
+            
+            return trials.ToList();
+        }
 
         public void Login(String username, String pass)
         {
@@ -20,7 +40,7 @@ namespace Swim.Client
             Username = username,
             Password = pass
             };
-            server.login(user, this);
+            server.Login(user, this);
             Console.WriteLine("Login succeeded ....");
             currentUser = user;
             Console.WriteLine("Current user {0}", user);
@@ -29,7 +49,7 @@ namespace Swim.Client
         public void logout()
         {
             Console.WriteLine("Ctrl logout");
-            server.logout(currentUser, this);
+            server.Logout(currentUser, this);
             currentUser = null;
         }
 

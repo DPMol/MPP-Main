@@ -10,7 +10,7 @@ namespace Swim.Data.Repositories.TrialRepositories
         public  bool Delete(int id)
         {
             _logger.InfoFormat("Deleting Trial: {0}", id);
-            string queryString = "Delete From Trial Where id = @id";
+            string queryString = "Delete From Trials Where id = @id";
 
 
             var command = new SqlCommand(queryString, _connection.Get());
@@ -34,7 +34,7 @@ namespace Swim.Data.Repositories.TrialRepositories
         public  IEnumerable<Trial> FindAll()
         {
             _logger.Info("Searching all trials");
-            string queryString = "SELECT *  FROM  Trial";
+            string queryString = "SELECT *  FROM  Trials";
 
             var command = new SqlCommand(queryString, _connection.Get());
 
@@ -45,10 +45,8 @@ namespace Swim.Data.Repositories.TrialRepositories
                 while (reader.Read())
                 {
                     var id = (int)reader["id"];
-                    var name = reader["name"].ToString();
                     var distance = (int)reader["distance"];
                     var style = reader["style"].ToString();
-                    var startTime = (DateTime)reader["startTime"];
 
                     Trial trial = new()
                     {

@@ -6,8 +6,8 @@ namespace Swim.Domain.Models.ParticipantModels
     [Serializable]
     public class ParticipantDTO : Entity<int>
     {
-        string Name { get; set; }
-        int Age { get; set; }
-        TrialDTO[] ?Trials { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public TrialDTO[] ?Trials { get; set; }
     }
 }

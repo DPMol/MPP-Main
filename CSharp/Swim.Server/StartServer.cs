@@ -9,15 +9,10 @@ namespace Swim.Server
     {
         static void Main(string[] args)
         {
-
-            // IUserRepository userRepo = new UserRepositoryMock();
-            //  IUserRepository userRepo=new UserRepositoryDb();
-            // IMessageRepository messageRepository=new MessageRepositoryDb();
-            IUserRepository userRepo = new UserRepository();
-            IChatServices serviceImpl = new ChatServerImpl(userRepo);
+            IChatServices serviceImpl = new ChatServerImpl();
 
             // IChatServer serviceImpl = new ChatServerImpl();
-            SerialChatServer server = new SerialChatServer("127.0.0.1", 55556, serviceImpl);
+            SerialChatServer server = new SerialChatServer("127.0.0.1", 55555, serviceImpl);
             server.Start();
             Console.WriteLine("Server started ...");
             //Console.WriteLine("Press <enter> to exit...");

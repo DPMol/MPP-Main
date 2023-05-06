@@ -5,8 +5,8 @@ namespace Swim.Domain.Models.ParticipantModels
 {
     public class Participant : Entity<int>
     {
-        string Name { get; set; }
-        int Age { get; set; }
-        List<Trial> Trials { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public List<Trial> Trials { get; set; }
     }
 }

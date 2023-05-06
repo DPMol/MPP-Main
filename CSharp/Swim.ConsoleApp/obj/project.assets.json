@@ -684,11 +684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.ConsoleApp\\Swim.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.ConsoleApp\\Swim.ConsoleApp.csproj",
       "projectName": "Swim.ConsoleApp",
-      "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.ConsoleApp\\Swim.ConsoleApp.csproj",
+      "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.ConsoleApp\\Swim.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\12den\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.ConsoleApp\\obj\\",
+      "outputPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\12den\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -705,8 +705,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj": {
-              "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj"
+            "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj": {
+              "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj"
             }
           }
         }

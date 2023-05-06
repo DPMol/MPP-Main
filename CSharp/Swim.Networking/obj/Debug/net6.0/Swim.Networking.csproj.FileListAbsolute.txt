@@ -15,3 +15,20 @@ D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\De
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\refint\Swim.Networking.dll
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.pdb
 D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\ref\Swim.Networking.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.AssemblyReference.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.AssemblyInfoInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.AssemblyInfo.cs
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.CoreCompileInputs.cache
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\refint\Swim.Networking.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.deps.json
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Domain.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Services.dll
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Domain.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Services.pdb
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.CopyComplete
+C:\Projects\University\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\ref\Swim.Networking.dll

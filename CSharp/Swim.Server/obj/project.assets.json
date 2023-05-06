@@ -723,11 +723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Server\\Swim.Server.csproj",
+      "projectUniqueName": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Server\\Swim.Server.csproj",
       "projectName": "Swim.Server",
-      "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Server\\Swim.Server.csproj",
+      "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Server\\Swim.Server.csproj",
       "packagesPath": "C:\\Users\\12den\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Server\\obj\\",
+      "outputPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\12den\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -744,14 +744,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj": {
-              "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj"
+            "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj": {
+              "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Data\\Swim.Data.csproj"
             },
-            "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj": {
-              "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj"
+            "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj": {
+              "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Networking\\Swim.Networking.csproj"
             },
-            "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Services\\Swim.Services.csproj": {
-              "projectPath": "D:\\Programming\\UBB\\Anul 2\\Semestrul 2\\MPP\\MPP-Main\\CSharp\\Swim.Services\\Swim.Services.csproj"
+            "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Services\\Swim.Services.csproj": {
+              "projectPath": "C:\\Projects\\University\\MPP-Main\\CSharp\\Swim.Services\\Swim.Services.csproj"
             }
           }
         }
