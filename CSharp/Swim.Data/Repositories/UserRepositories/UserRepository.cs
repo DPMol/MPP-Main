@@ -66,6 +66,48 @@ namespace Swim.Data.Repositories.UserRepositories
             return users;
         }
 
+        public User? FindBy(string username, string password)
+        {
+            _logger.Info("Searching user");
+            string queryString = "SELECT *  FROM  Users Where username = @username and password = @password";
+
+            var command = new SqlCommand(queryString, _connection.Get());
+            command.Parameters.AddWithValue("@username", username);
+            command.Parameters.AddWithValue("@password", password);
+
+            SqlDataReader reader = command.ExecuteReader();
+            User? user = null;
+            try
+            {
+                if (reader.Read())
+                {
+                    _logger.Info("User Found");
+
+                    var id = (int)reader["id"];
+                    var dbUsername = reader["username"].ToString();
+                    var dbPassword = reader["password"].ToString();
+
+                    user = new()
+                    {
+                        Id = id,
+                        Username = dbUsername,
+                        Password = dbPassword
+                    };
+                }
+                else
+                {
+                    _logger.Warn("User Not Found");
+                }
+            }
+            finally
+            {
+                reader.Close();
+            }
+
+            _logger.InfoFormat("Search Finished");
+            return user;
+        }
+
         public User? FindOne(int id)
         {
             _logger.InfoFormat("Searching User: {0}", id);

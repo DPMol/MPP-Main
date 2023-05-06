@@ -53,10 +53,8 @@ namespace Swim.Data.Repositories.TrialRepositories
                     Trial trial = new()
                     {
                         Id = id,
-                        Name = name,
                         Distance = distance,
                         Style = style,
-                        StartTime = startTime,
                     };
 
                     trials.Add(trial);
@@ -87,18 +85,14 @@ namespace Swim.Data.Repositories.TrialRepositories
                 {
                     _logger.Info("Trial Found");
 
-                    var name = reader["name"].ToString();
                     var distance = (int)reader["distance"];
                     var style = reader["style"].ToString();
-                    var startTime = (DateTime)reader["startTime"];
 
                     trial = new()
                     {
                         Id = id,
-                        Name = name,
                         Distance = distance,
                         Style = style,
-                        StartTime = startTime
                     };
                 }
                 else
@@ -118,14 +112,11 @@ namespace Swim.Data.Repositories.TrialRepositories
         public bool Save(Trial entity)
         {
             _logger.InfoFormat("Saving Trial: {0}", entity.Id);
-            string queryString = "Insert Into Trials(name, distance, style, startTime) Values(@name, @distance, @style, @startTime)";
+            string queryString = "Insert Into Trials(distance, style) Values(@distance, @style)";
 
             var command = new SqlCommand(queryString, _connection.Get());
-            command.Parameters.AddWithValue("@name", entity.Name);
             command.Parameters.AddWithValue("@distance", entity.Distance);
             command.Parameters.AddWithValue("@style", entity.Style);
-            command.Parameters.AddWithValue("@startTime", entity.StartTime);
-
             var result = command.ExecuteNonQuery() > 0;
 
             if (result)
@@ -143,15 +134,13 @@ namespace Swim.Data.Repositories.TrialRepositories
         public bool Update(Trial entity)
         {
             _logger.InfoFormat("Updating Trial: {0}", entity.Id);
-            string queryString = "Update Users set name = @name, distance = @distance, style = @style, startTime = @startTime" +
+            string queryString = "Update Users set distance = @distance, style = @style" +
                 " Where id = @id";
 
 
             var command = new SqlCommand(queryString, _connection.Get());
-            command.Parameters.AddWithValue("@name", entity.Name);
             command.Parameters.AddWithValue("@distance", entity.Distance);
             command.Parameters.AddWithValue("@style", entity.Style);
-            command.Parameters.AddWithValue("@startTime", entity.StartTime);
 
             var result = command.ExecuteNonQuery() > 0;
 

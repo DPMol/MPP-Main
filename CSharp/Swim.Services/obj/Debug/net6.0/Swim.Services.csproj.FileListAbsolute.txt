@@ -1,0 +1,15 @@
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\bin\Debug\net6.0\Swim.Services.deps.json
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\bin\Debug\net6.0\Swim.Services.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\bin\Debug\net6.0\Swim.Services.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\bin\Debug\net6.0\Swim.Domain.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\bin\Debug\net6.0\Swim.Domain.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.csproj.AssemblyReference.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.AssemblyInfoInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.AssemblyInfo.cs
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.csproj.CoreCompileInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.csproj.CopyComplete
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\refint\Swim.Services.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\Swim.Services.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Services\obj\Debug\net6.0\ref\Swim.Services.dll

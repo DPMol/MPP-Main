@@ -4,7 +4,7 @@ namespace Swim.Data.Utils
 {
     public class DatabaseConnection
     {
-        private readonly string connectionString = @"Server=DESKTOP-V45K2GG\SQLEXPRESS;Database=MPP
+        private readonly string connectionString = @"Server=localhost;Database=MPP
             ;Integrated Security=true;TrustServerCertificate=true";
 
         private SqlConnection? connection;
@@ -38,7 +38,7 @@ namespace Swim.Data.Utils
             {
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-
+                Console.WriteLine("opened bruh");
             }
             catch (Exception)
             {

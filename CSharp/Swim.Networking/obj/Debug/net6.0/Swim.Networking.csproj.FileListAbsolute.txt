@@ -1,0 +1,17 @@
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.AssemblyReference.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.AssemblyInfoInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.AssemblyInfo.cs
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.CoreCompileInputs.cache
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.deps.json
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Networking.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Domain.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Services.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Domain.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\bin\Debug\net6.0\Swim.Services.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.csproj.CopyComplete
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\refint\Swim.Networking.dll
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\Swim.Networking.pdb
+D:\Programming\UBB\Anul 2\Semestrul 2\MPP\MPP-Main\CSharp\Swim.Networking\obj\Debug\net6.0\ref\Swim.Networking.dll
